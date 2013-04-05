@@ -1,0 +1,47 @@
+<div class="container">
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @cv.Name %>
+</p>
+
+<p>
+  <b>Age:</b>
+  <%= @cv.Age %>
+</p>
+
+<p>
+  <b>Gender:</b>
+  <%= @cv.Gender %>
+</p>
+
+<p>
+  <b>Nationality:</b>
+  <%= @cv.Nationality %>
+</p>
+
+<p>
+  <b>Dob:</b>
+  <%= @cv.DOB %>
+</p>
+
+<p>
+  <b>Pob:</b>
+  <%= @cv.POB %>
+</p>
+
+<p>
+  <b>Experience:</b>
+  <%= @cv.Experience %>
+</p>
+
+<p>
+  <b>Other:</b>
+  <%= @cv.Other %>
+</p>
+
+
+<%= link_to 'Edit', edit_cv_path(@cv) %> |
+<%= link_to 'Back', cvs_path %>
+</div>

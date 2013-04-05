@@ -1,0 +1,51 @@
+<div class="container">
+<%= form_for(@cv) do |f| %>
+  <% if @cv.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@cv.errors.count, "error") %> prohibited this cv from being saved:</h2>
+
+      <ul>
+      <% @cv.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Name %><br />
+    <%= f.text_field :Name %>
+  </div>
+  <div class="field">
+    <%= f.label :Age %><br />
+    <%= f.number_field :Age %>
+  </div>
+  <div class="field">
+    <%= f.label :Gender %><br />
+    <%= f.text_field :Gender %>
+  </div>
+  <div class="field">
+    <%= f.label :Nationality %><br />
+    <%= f.text_field :Nationality %>
+  </div>
+  <div class="field">
+    <%= f.label :DOB %><br />
+    <%= f.date_select :DOB %>
+  </div>
+  <div class="field">
+    <%= f.label :POB %><br />
+    <%= f.text_field :POB %>
+  </div>
+  <div class="field">
+    <%= f.label :Experience %><br />
+    <%= f.text_field :Experience %>
+  </div>
+  <div class="field">
+    <%= f.label :Other %><br />
+    <%= f.text_field :Other %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+</div>

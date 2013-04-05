@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  Name: MyString
+  Age: 1
+  Gender: MyString
+  Nationality: MyString
+  DOB: 2013-03-12
+  POB: MyString
+  Experience: MyString
+  Other: MyString
+
+two:
+  Name: MyString
+  Age: 1
+  Gender: MyString
+  Nationality: MyString
+  DOB: 2013-03-12
+  POB: MyString
+  Experience: MyString
+  Other: MyString
